@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="maptest" size="5.000000 3.529492" />
+    <ImageTarget name="mue" size="1.000000 1.404449" />
+    <ImageTarget name="zombie" size="1.000000 1.392959" />
+    <ImageTarget name="plante" size="1.000000 1.399761" />
+    <ImageTarget name="Serpent" size="1.000000 1.404887" />
+    <ImageTarget name="plaine" size="1.000000 1.402921" />
+    <ImageTarget name="marais" size="1.000000 1.378460" />
+    <ImageTarget name="foret" size="1.000000 1.396768" />
+    <ImageTarget name="Targetmult6" size="1.000000 0.989500" />
+    <ImageTarget name="Targetmult5" size="1.000000 0.989500" />
+    <ImageTarget name="Targetmult4" size="1.000000 1.000000" />
+    <ImageTarget name="Targetmult3" size="1.000000 1.000000" />
+    <ImageTarget name="Targetmult2" size="1.000000 1.000000" />
+    <ImageTarget name="Targetmult1" size="1.000000 0.968000" />
+    <ImageTarget name="Target3" size="1.000000 1.000000" />
+    <ImageTarget name="Target2" size="1.000000 1.010500" />
+    <ImageTarget name="Target1" size="1.000000 1.010500" />
+    <ImageTarget name="montagne" size="1.000000 1.391288" />
+    <ImageTarget name="TOW" size="2.000000 4.974874" />
     <ImageTarget name="H" size="1.000000 1.295775" />
   </Tracking>
 </QCARConfig>

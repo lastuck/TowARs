@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\UnityProjects\TowARsRep" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="CollisionTest.cs" t="Include" />
+          <e p="Defenses" t="Include">
+            <e p="AppuiBouton.cs" t="Include" />
+            <e p="GridColorChanger.cs" t="Include" />
+            <e p="GridGenerator.cs" t="Include" />
+            <e p="HoverDetector.cs" t="Include" />
+          </e>
+          <e p="Target.cs" t="Include" />
+        </e>
+        <e p="StreamingAssets" t="Include">
+          <e p="Vuforia" t="Include">
+            <e p="TowARsDB.xml" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="TowARsRep.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Hugo\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Hugo\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_TowARsRep.742272410.00" t="ExcludeRecursive" />
+  </component>
+</project>
