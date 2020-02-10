@@ -1,57 +1,45 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Vuforia;
 
 namespace Defenses
 {
-    public class GridGenerator : MonoBehaviour, ITrackableEventHandler
+    public class GridGenerator : MonoBehaviour
     {
         [SerializeField]
         private GameObject gridCell;
-
-        [SerializeField] 
+        
         private GameObject map;
 
+        [SerializeField] 
+        private CheckSeen checkSeen;
+
+        [SerializeField] 
+        private ObjectsInScene objectsInScene;
+        
         private GameObject currentCell;
 
-        private bool hasBeenSeen;
-        
-        private TrackableBehaviour mTrackableBehaviour;
+        private bool hasBeenGenerated;
 
-        void Start()
-        {
-            mTrackableBehaviour = GetComponent<TrackableBehaviour>();
-            if (mTrackableBehaviour)
-            {
-                mTrackableBehaviour.RegisterTrackableEventHandler(this);
-                //Debug.Log("yes");
-            }
-        }
-        
         private void Generate()
         {
-            for (int i = -35; i < 34; i+=2)
+            for (int i = -12; i < 12; i++)
             {
-                for (int j = -35; j < 34; j+=2)
+                for (int j = -22; j < 2; j++)
                 {
-                    currentCell = Instantiate(gridCell, new Vector3( i/20.0f,  1f, j/20.0f), Quaternion.Euler(90,0,0));
-                    currentCell.transform.parent = map.transform;
+                    currentCell = Instantiate(gridCell, new Vector3( i,  3f, j), Quaternion.Euler(90,0,0));
+                    currentCell.transform.parent = objectsInScene.map.transform;
                 }
             }
         }
 
-        
 
-        public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
+        private void Update()
         {
-            if (newStatus == TrackableBehaviour.Status.DETECTED ||
-                newStatus == TrackableBehaviour.Status.TRACKED ||
-                newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
+            if (checkSeen.hasBeenSeen && !hasBeenGenerated)
             {
-                if (!hasBeenSeen)
-                {
-                    hasBeenSeen = true;
-                    Generate();
-                }
+                hasBeenGenerated = true;
+                Generate();
             }
         }
     }

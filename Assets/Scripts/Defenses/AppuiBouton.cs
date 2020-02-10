@@ -22,7 +22,7 @@ namespace Defenses
 
         public void OnButtonPressed(VirtualButtonBehaviour vb)
         {
-            if (!hasBeenPressed && hoverDetector.oldHover != null)
+            if (!hasBeenPressed && hoverDetector.oldHover != null && hoverDetector.oldHover.GetComponent<GridColorChanger>().validArea)
             {
                 targetObject.transform.parent = hoverDetector.oldHover.transform;
                 targetObject.transform.position = hoverDetector.oldHover.transform.position + Vector3.up;

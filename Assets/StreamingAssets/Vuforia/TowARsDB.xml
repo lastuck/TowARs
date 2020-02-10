@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="tresor" size="1.000000 1.388795" />
+    <ImageTarget name="pegase" size="1.000000 1.367574" />
+    <ImageTarget name="drakon" size="1.000000 1.384961" />
+    <ImageTarget name="humain" size="1.000000 1.388459" />
     <ImageTarget name="maptest" size="5.000000 3.529492" />
     <ImageTarget name="mue" size="1.000000 1.404449" />
     <ImageTarget name="zombie" size="1.000000 1.392959" />

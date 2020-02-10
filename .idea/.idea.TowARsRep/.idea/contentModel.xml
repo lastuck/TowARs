@@ -4,14 +4,68 @@
     <e p="C:\UnityProjects\TowARsRep" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Levels" t="Include">
+          <e p="level_1.txt" t="Include" />
+          <e p="level_2.txt" t="Include" />
+        </e>
+        <e p="PlayerDecks" t="Include">
+          <e p="decks.txt" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
+          <e p="Attack" t="Include">
+            <e p="LevelReader.cs" t="Include" />
+          </e>
+          <e p="CheckSeen.cs" t="Include" />
           <e p="CollisionTest.cs" t="Include" />
+          <e p="DeckBuilding" t="Include">
+            <e p="CardBehavior.cs" t="Include" />
+            <e p="CardInListBehavior.cs" t="Include" />
+            <e p="CardsDescription.cs" t="Include" />
+            <e p="DeckListExposer.cs" t="Include" />
+            <e p="DecksController.cs" t="Include" />
+            <e p="initDecklist.cs" t="Include" />
+          </e>
           <e p="Defenses" t="Include">
             <e p="AppuiBouton.cs" t="Include" />
+            <e p="CardTargetContent.cs" t="Include" />
+            <e p="DeckListReader.cs" t="Include" />
+            <e p="EndScript.cs" t="Include" />
+            <e p="Explosion.cs" t="Include" />
             <e p="GridColorChanger.cs" t="Include" />
             <e p="GridGenerator.cs" t="Include" />
             <e p="HoverDetector.cs" t="Include" />
+            <e p="MobBehavior.cs" t="Include" />
+            <e p="MobSpawner.cs" t="Include" />
+            <e p="MobStats.cs" t="Include" />
+            <e p="PlayerStats.cs" t="Include" />
+            <e p="ScriptExposer.cs" t="Include" />
+            <e p="TurretScript.cs" t="Include" />
           </e>
+          <e p="GameController.cs" t="Include" />
+          <e p="Menu" t="Include">
+            <e p="MainMenu.cs" t="Include" />
+          </e>
+          <e p="NavMeshComponents" t="Include">
+            <e p="Editor" t="Include">
+              <e p="NavMeshAssetManager.cs" t="Include" />
+              <e p="NavMeshComponentsEditor.asmdef" t="Include" />
+              <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
+              <e p="NavMeshLinkEditor.cs" t="Include" />
+              <e p="NavMeshModifierEditor.cs" t="Include" />
+              <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
+              <e p="NavMeshSurfaceEditor.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="NavMeshComponents.asmdef" t="Include" />
+              <e p="NavMeshLink.cs" t="Include" />
+              <e p="NavMeshModifier.cs" t="Include" />
+              <e p="NavMeshModifierVolume.cs" t="Include" />
+              <e p="NavMeshSurface.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ObjectPooler.cs" t="Include" />
+          <e p="ObjectsInScene.cs" t="Include" />
+          <e p="SceneParams.cs" t="Include" />
           <e p="Target.cs" t="Include" />
         </e>
         <e p="StreamingAssets" t="Include">
@@ -20,6 +74,8 @@
           </e>
         </e>
       </e>
+      <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
+      <e p="NavMeshComponentsEditor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
